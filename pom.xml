@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>springboot.example</groupId>
-    <artifactId>spring-boot-hello</artifactId>
+    <artifactId>userdemo</artifactId>
     <version>1.0-SNAPSHOT</version>
     <!--此配置指定将工程打包成jar文件-->
     <packaging>jar</packaging>
@@ -21,6 +21,36 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
+        <!--junit测试依赖-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+        </dependency>
+        <!--jpa依赖-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-jpa</artifactId>
+        </dependency>
+        <!--mysql依赖-->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+        </dependency>
+
+        <!--工具依赖-->
+        <!--lombok依赖-->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.16.20</version>
+            <scope>provided</scope>
+        </dependency>
+        <!--junit测试依赖-->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
 
 
@@ -32,7 +62,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <!--配置应用主类，配置过后，cmd执行jar才可以成功-->
                 <!--<configuration>-->
-                    <!--<mainClass>spring.exmaple.Application</mainClass>-->
+                    <!--<mainClass>Application</mainClass>-->
                 <!--</configuration>-->
                 <executions>
                     <execution>
